@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Ramirez | Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+    <a href="#home" class="logo">TR<span>.</span></a>
+
+    <nav id="nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <div class="nav-actions">
+        <button class="edit-button" id="editButton" onclick="toggleEdit()">
+            ✎ EDIT WEBSITE
+        </button>
+
+        <button class="save-button" id="saveButton" onclick="saveChanges()" hidden>
+            SAVE CHANGES
+        </button>
+    </div>
+
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="status">
+            <span class="dot"></span>
+            AVAILABLE FOR PROJECTS
+        </p>
+
+        <p class="eyebrow">GTA MODDING & WEB DEVELOPMENT</p>
+
+        <h1>
+            TRAVIS<br>
+            <span>RAMIREZ</span><b>.</b>
+        </h1>
+
+        <h3>SA-MP DEVELOPER / LUA SCRIPTING / WEB DESIGN</h3>
+
+        <p class="description">
+            I build game-related tools, scripts, and websites.
+            My focus is creating practical and functional experiences
+            for the GTA San Andreas Multiplayer community.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="primary-button">
+                VIEW MY PROJECTS ↗
+            </a>
+
+            <a href="#contact" class="secondary-button">
+                CONTACT ME →
+            </a>
+        </div>
+
+        <div class="hero-footer">
+            <span>BASED IN <b>PHILIPPINES</b></span>
+            <span>FOCUS <b>GAME DEVELOPMENT</b></span>
+        </div>
+
+    </div>
+
+    <!-- PROFILE PHOTO -->
+    <div class="hero-image">
+
+        <div class="photo-frame">
+
+            <img
+                id="profilePhoto"
+                src="images/TRAVIS.jpg"
+                alt="Travis Profile Photo"
+            >
+
+            <div class="photo-placeholder" id="photoPlaceholder">
+                <h2>TR</h2>
+                <p>YOUR PHOTO HERE</p>
+            </div>
+
+        </div>
+
+        <div class="image-label">
+            LOS SANTOS<br>
+            <strong>DEVELOPER DIVISION</strong>
+        </div>
+
+        <div class="image-number">01</div>
+
+        <label class="photo-upload-button" for="photoUpload">
+            CHANGE PHOTO
+        </label>
+
+        <input
+            type="file"
+            id="photoUpload"
+            accept="image/*"
+            hidden
+        >
+
+    </div>
+
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+    BUILD ✦ SCRIPT ✦ CREATE ✦ MODIFY ✦ DEVELOP ✦ BUILD ✦ SCRIPT ✦ CREATE ✦
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+
+    <p class="section-number">01 / ABOUT ME</p>
+
+    <div class="about-grid">
+
+        <div>
+            <p class="eyebrow">THE PERSON BEHIND THE CODE</p>
+
+            <h2>
+                NOT JUST PLAYING.<br>
+                <span>CREATING THE GAME.</span>
+            </h2>
+        </div>
+
+        <div class="about-text">
+
+            <p>
+                I'm Travis, a student developer interested in building
+                and customizing experiences around GTA San Andreas Multiplayer.
+            </p>
+
+            <p>
+                I enjoy exploring Lua scripting, CLEO modifications,
+                Pawn development, and web technologies.
+                I continuously improve my skills through personal projects
+                and experimentation.
+            </p>
+
+            <div class="tags">
+                <span>SELF-LEARNING</span>
+                <span>PROBLEM SOLVING</span>
+                <span>GAME DEVELOPMENT</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects-section" id="projects">
+
+    <p class="section-number">02 / SELECTED WORK</p>
+
+    <div class="section-heading">
+        <h2>MY <span>PROJECTS.</span></h2>
+        <p>Some of my development interests and projects.</p>
+    </div>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <div class="project-art lua-art">
+                <span>lua()</span>
+            </div>
+
+            <div class="project-info">
+                <small>01 / SCRIPTING</small>
+                <h3>MOONLOADER SCRIPTS</h3>
+                <p>
+                    Custom Lua scripts and utilities for GTA San Andreas
+                    Multiplayer environments.
+                </p>
+
+                <div class="tags">
+                    <span>LUA</span>
+                    <span>MOONLOADER</span>
+                    <span>SA-MP</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art cleo-art">
+                <span>CLEO</span>
+            </div>
+
+            <div class="project-info">
+                <small>02 / MODDING</small>
+                <h3>CLEO MODIFICATIONS</h3>
+                <p>
+                    Experiments with CLEO scripting and custom
+                    GTA San Andreas modifications.
+                </p>
+
+                <div class="tags">
+                    <span>CLEO</span>
+                    <span>GTA SA</span>
+                    <span>MODDING</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art pawn-art">
+                <span>{ PAWN }</span>
+            </div>
+
+            <div class="project-info">
+                <small>03 / SERVER DEVELOPMENT</small>
+                <h3>SA-MP SYSTEMS</h3>
+                <p>
+                    Server-side features, commands, and roleplay
+                    systems using Pawn.
+                </p>
+
+                <div class="tags">
+                    <span>PAWN</span>
+                    <span>MYSQL</span>
+                    <span>SA-MP</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-art web-art">
+                <span>HTML<br>CSS<br>JS</span>
+            </div>
+
+            <div class="project-info">
+                <small>04 / WEB DEVELOPMENT</small>
+                <h3>WEB EXPERIENCES</h3>
+                <p>
+                    Personal websites, gaming community interfaces,
+                    and interactive web projects.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JAVASCRIPT</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section" id="skills">
+
+    <div class="section">
+
+        <p class="section-number">03 / TECH STACK</p>
+
+        <h2>MY DEV <span>LOADOUT.</span></h2>
+
+        <div class="skills-list">
+
+            <div class="skill">
+                <span>HTML / CSS</span>
+                <div class="skill-bar"><div style="width:80%"></div></div>
+                <small>WEB</small>
+            </div>
+
+            <div class="skill">
+                <span>JAVASCRIPT</span>
+                <div class="skill-bar"><div style="width:55%"></div></div>
+                <small>WEB</small>
+            </div>
+
+            <div class="skill">
+                <span>LUA</span>
+                <div class="skill-bar"><div style="width:70%"></div></div>
+                <small>SCRIPTING</small>
+            </div>
+
+            <div class="skill">
+                <span>PAWN</span>
+                <div class="skill-bar"><div style="width:45%"></div></div>
+                <small>SA-MP</small>
+            </div>
+
+            <div class="skill">
+                <span>CLEO</span>
+                <div class="skill-bar"><div style="width:40%"></div></div>
+                <small>MODDING</small>
+            </div>
+
+        </div>
+
+        <p class="skill-note">
+            SKILL LEVELS ARE EDITABLE PLACEHOLDERS.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+
+    <p class="section-number">04 / CONTACT</p>
+
+    <div class="contact-container">
+
+        <div>
+            <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+
+            <h2>
+                LET'S BUILD<br>
+                <span>SOMETHING.</span>
+            </h2>
+
+            <p>
+                Interested in collaborating, discussing a project,
+                or talking about GTA modding and development?
+                Feel free to contact me.
+            </p>
+        </div>
+
+        <div class="contact-links">
+
+            <a href="mailto:your@email.com">
+                <small>EMAIL</small>
+                <strong>travisramirezemail@email.com</strong>
+                ↗
+            </a>
+
+            <a href="https://github.com/" target="_blank" rel="noopener">
+                <small>GITHUB</small>
+                <strong>github.com/TravisOfficial</strong>
+                ↗
+            </a>
+
+            <a href="#">
+                <small>DISCORD</small>
+                <strong>travis.official</strong>
+                ↗
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="logo">TR<span>.</span></div>
+
+    <p>© <span id="year"></span> TRAVIS RAMIREZ. ALL RIGHTS RESERVED.</p>
+
+    <a href="#home">BACK TO TOP ↑</a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
